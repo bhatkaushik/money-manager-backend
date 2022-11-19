@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cors());
 
 //routes
-
+app.get("/",(req,res)=>{res.send(data:"hello")})
 //transections routes
 app.use("/api/v1/transections", require("./routes/transectionRoutes"));
 //port
