@@ -23,7 +23,7 @@ app.use(cors());
 //transections routes
 app.use("/api/v1/transections", require("./routes/transectionRoutes"));
 //port
-const PORT = 8080 || process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 //listen server
 app.listen(PORT, () => {
